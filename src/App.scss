@@ -1,0 +1,43 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: 'Raleway', sans-serif;
+
+  .header {
+    height: 100px;
+    width: 100%;
+    text-transform: uppercase;
+    box-shadow: 0 3px 7px 0 rgba(100, 100, 100, 0.2);
+
+    p,
+    span {
+      font-weight: lighter;
+      font-style: normal;
+      font-size: 2.5rem;
+    }
+
+    span {
+      font-size: 3rem;
+      margin-right: 10px;
+    }
+  }
+
+  .content {
+    flex: 1 0 auto;
+    padding: 2rem 0 0 0;
+  }
+
+  .header,
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer {
+    flex-shrink: 0;
+    height: 60px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,19 @@
+.weapon {
+  border-radius: 50%;
+  height: 115px;
+  width: 115px;
+  margin-left: 10px;
+  margin-right: 10px;
+  // background: white;
+  font-size: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid;
+
+  &:hover {
+    opacity: .7;
+    transition: opacity .3s ease-in-out;
+    cursor: pointer;
+  }
+}
