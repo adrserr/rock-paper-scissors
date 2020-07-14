@@ -1,0 +1,27 @@
+.player {
+  display: flex;
+  align-items: center;
+
+  &--weapon {
+    border-radius: 50%;
+    height: 115px;
+    width: 115px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid;
+  }
+
+  &--left-icon {
+    transform: scaleX(-1) rotate(90deg);
+  }
+
+  &--right-icon {}
+
+  &--games {
+    margin: 0 25px 0 25px;
+  }
+}

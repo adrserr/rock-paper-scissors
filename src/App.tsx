@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.scss'
+import { Game } from './views'
 
-function App() {
+function App(): JSX.Element {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="app">
+      <header className="header bg-maroon orange">
+        <span className="icon-scissors orange" />
+        <p>Rock-paper-scissors</p>
       </header>
+      <section className="content">
+        <Game />
+      </section>
+      <footer className="footer bg-silver">
+        <p>
+          Rock-paper-scissors, created by{' '}
+          <a href="https://github.com/adrserr">adrserr</a>
+        </p>
+      </footer>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -1,0 +1,35 @@
+.game {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+
+  &--mode {}
+
+  &--mode-button {
+    width: 10rem;
+    height: 2.4rem;
+    align-self: center;
+    border-style: solid;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    &:focus {
+      outline: 0;
+    }
+
+    &:hover {
+      opacity: .7;
+      transition: opacity .3s ease-in-out;
+      cursor: pointer;
+    }
+  }
+
+  .board {
+    flex: 1 0 auto;
+  }
+}
